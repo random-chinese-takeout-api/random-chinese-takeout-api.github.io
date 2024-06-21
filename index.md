@@ -1,3 +1,3 @@
 # Chinese Takeout Name API
 
-> **note**
+> **NOTE:**
