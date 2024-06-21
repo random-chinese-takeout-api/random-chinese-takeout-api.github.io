@@ -24,7 +24,7 @@ Below are different methods you can run it Including our public Postman Workspac
 
 Shell (cURL):
 ```shell 
-curl --location 'https://calculator-eight-weld.vercel.app/?url=https%3A%2F%2Fchineserandomtakeoutapi-v1.vercel.app%2Fapi%2Fgenerate
+curl --location https://calculator-eight-weld.vercel.app/?url=https%3A%2F%2Fchineserandomtakeoutapi-v1.vercel.app%2Fapi%2Fgenerate
 ```
 CS (HttpClient):
 ```cs
