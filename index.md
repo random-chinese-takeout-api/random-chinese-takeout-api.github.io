@@ -18,3 +18,10 @@ This project was initiated using Node.js v18.19.0, Express.js and Vercel CLI.
 ```shell 
 curl --location 'https://calculator-eight-weld.vercel.app/?url=https%3A%2F%2Fchineserandomtakeoutapi-v1.vercel.app%2Fapi%2Fgenerate
 ```
+```cs
+var client = new HttpClient();
+var request = new HttpRequestMessage(HttpMethod.Get, "https://calculator-eight-weld.vercel.app/?url=https://chineserandomtakeoutapi-v1.vercel.app/api/generate");
+var response = await client.SendAsync(request);
+response.EnsureSuccessStatusCode();
+Console.WriteLine(await response.Content.ReadAsStringAsync());
+```
