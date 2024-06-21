@@ -1,5 +1,6 @@
 # Chinese Takeout Name API
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Five_Blessings_Symbol.svg/400px-Five_Blessings_Symbol.svg.png"> 
+
 > **NOTE:** This API needs to be in a CORS Proxy to work due to autoenabled cors restrictions on the web page from vercel.
 
 Recommended Endpoint:`https://calculator-eight-weld.vercel.app/?url=https://chineserandomtakeoutapi-v1.vercel.app/api/generate`
