@@ -111,3 +111,9 @@ res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
 ```
+R:
+```r
+library(RCurl)
+res <- getURL("https://calculator-eight-weld.vercel.app/?url=https://chineserandomtakeoutapi-v1.vercel.app/api/generate", .opts=list(followlocation = TRUE))
+cat(res)
+```
