@@ -22,7 +22,7 @@ Below are different methods you can run it Including our public Postman Workspac
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/spacecraft-engineer-38000999/workspace/takeout-api)
 
 
-cURL:
+Shell (cURL):
 ```shell 
 curl --location 'https://calculator-eight-weld.vercel.app/?url=https%3A%2F%2Fchineserandomtakeoutapi-v1.vercel.app%2Fapi%2Fgenerate
 ```
@@ -66,7 +66,7 @@ axios.request(config)
   console.log(error);
 });
 ```
-PHP:
+PHP (cURL):
 ```php
 <?php
 
@@ -82,9 +82,32 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'GET',
 ));
+```
+C (libcurl):
+```c
+CURL *curl;
+CURLcode res;
+curl = curl_easy_init();
+if(curl) {
+  curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "GET");
+  curl_easy_setopt(curl, CURLOPT_URL, "https://calculator-eight-weld.vercel.app/?url=https%3A%2F%2Fchineserandomtakeoutapi-v1.vercel.app%2Fapi%2Fgenerate");
+  curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+  curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
+  struct curl_slist *headers = NULL;
+  curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+  res = curl_easy_perform(curl);
+}
+curl_easy_cleanup(curl);
+```
+Python (http.client):
+```python
+import http.client
 
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
+conn = http.client.HTTPSConnection("calculator-eight-weld.vercel.app")
+payload = ''
+headers = {}
+conn.request("GET", "/?url=https://chineserandomtakeoutapi-v1.vercel.app/api/generate", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
 ```
