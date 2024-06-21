@@ -13,6 +13,8 @@ The Chinese takeout name API is an API that generates a random chinese takeout r
 ```
 This project was initiated using Node.js v18.19.0, Express.js and Vercel CLI.
 
+The API is completely free to use with no API Key, no X-API Key, no call limits and no need to log into any external service.
+
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/spacecraft-engineer-38000999/workspace/takeout-api)
 ```shell 
