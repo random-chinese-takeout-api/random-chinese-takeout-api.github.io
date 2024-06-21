@@ -4,7 +4,7 @@
 
 Recommended Endpoint:`https://calculator-eight-weld.vercel.app/?url=https://chineserandomtakeoutapi-v1.vercel.app/api/generate`
 
-Normal(CORS Restricted) `https://chineserandomtakeoutapi-v1.vercel.app/api/generate`
+Normal(CORS Restricted): `https://chineserandomtakeoutapi-v1.vercel.app/api/generate`
 
 The Chinese takeout name API is an API that generates a random chinese takeout restaurant name:
 
