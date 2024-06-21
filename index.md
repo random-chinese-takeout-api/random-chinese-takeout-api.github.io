@@ -11,7 +11,7 @@ The Chinese takeout name API is an API that generates a random chinese takeout r
   "restaurantName": "Great Wall Oriental Seafood"
 }
 ```
-This project was initiated using Node.js v18.19.0 and Express.js
+This project was initiated using Node.js v18.19.0, Express.js and Vercel CLI.
 
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/spacecraft-engineer-38000999/workspace/takeout-api)
