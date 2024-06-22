@@ -10,12 +10,12 @@
     <style>
         /* Add your custom Chinese-inspired CSS here */
         body {
-            font-family: 'Noto Serif SC', serif; /* Traditional Chinese font */
+            font-family: 'Noto Serif SC', serif; /* Noto Serif SC for Chinese, fallback to serif for English */
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #fffaf0; /* Off-white background color */
-            color: #ffd700; /* Yellow text color */
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333; /* Dark gray text color */
         }
 
         header {
@@ -30,27 +30,26 @@
             max-width: 960px;
             margin: 2em auto;
             padding: 1em;
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            background: #990000; /* Deep red background */
             border: 2px solid #ffd700; /* Yellow border */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: #ffd700; /* Ensuring text inside container is yellow */
+            color: #ffd700; /* Yellow text color */
         }
 
         h1, h2, h3 {
             color: #ffd700; /* Yellow headings */
-            background: rgba(153, 0, 0, 0.8); /* Deep red background for headings with opacity */
+            background: #990000; /* Deep red background for headings */
             padding: 0.5em;
             border-radius: 5px;
-            word-wrap: break-word; /* Ensure long words break to prevent overflow */
+            margin-top: 0; /* Remove default margin */
         }
 
         p {
             color: #ffd700; /* Yellow paragraph text */
-            background: rgba(153, 0, 0, 0.8); /* Deep red background for paragraphs with opacity */
+            background: #990000; /* Deep red background for paragraphs */
             padding: 0.5em;
             border-radius: 5px;
-            word-wrap: break-word; /* Ensure long words break to prevent overflow */
         }
 
         a {
