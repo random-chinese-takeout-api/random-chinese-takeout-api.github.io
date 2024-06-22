@@ -122,4 +122,4 @@ library(RCurl)
 res <- getURL("https://calculator-eight-weld.vercel.app/?url=https://chineserandomtakeoutapi-v1.vercel.app/api/generate", .opts=list(followlocation = TRUE))
 cat(res)
 ```
-> **希望你在 API 方面好运**
+**希望你在 API 方面好运!**
