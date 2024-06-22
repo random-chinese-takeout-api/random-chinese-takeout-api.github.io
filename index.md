@@ -24,6 +24,8 @@ The API is completely free to use with no API Key, no X-API Key, no call limits 
  
 Below are different methods you can run it Including our public Postman Workspace.
 
+> **NOTE**: The workspace is in the collection `testing`.
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/spacecraft-engineer-38000999/workspace/takeout-api)
 
 
