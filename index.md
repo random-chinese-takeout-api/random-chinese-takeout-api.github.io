@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Chinese Takeout Name API"
+---
+
 # Chinese Takeout Name API
 
 > **NOTE:** This API needs to be in a CORS Proxy to work due to autoenabled cors restrictions on the web page from vercel.
