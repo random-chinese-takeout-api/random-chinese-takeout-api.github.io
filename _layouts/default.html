@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        /* Add your custom Chinese-inspired CSS here */
+        body {
+            font-family: 'Noto Serif SC', serif; /* Traditional Chinese font */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf0; /* Off-white background color */
+            color: #ffd700; /* Yellow text color */
+        }
+
+        header {
+            background: #990000; /* Deep red background */
+            color: #ffd700; /* Yellow text color */
+            padding: 1em 0;
+            text-align: center;
+            border-bottom: 5px solid #ffd700; /* Yellow bottom border */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 1em;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border: 2px solid #ffd700; /* Yellow border */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDkVfkjSGByJVem29GkdFjT7Ge5e2jqS2Qew&s');
+            background-size: cover;
+            background-blend-mode: multiply;
+            color: #ffd700; /* Ensuring text inside container is yellow */
+        }
+
+        h1, h2, h3 {
+            color: #ffd700; /* Yellow headings */
+            background: rgba(153, 0, 0, 0.8); /* Deep red background for headings with opacity */
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+
+        p {
+            color: #ffd700; /* Yellow paragraph text */
+            background: rgba(153, 0, 0, 0.8); /* Deep red background for paragraphs with opacity */
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #ffd700; /* Yellow links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional styles for a Chinese aesthetic */
+        .container::before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 100%;
+            background: linear-gradient(to right, #ffd700 25%, transparent 25%, transparent 50%, #ffd700 50%, #ffd700 75%, transparent 75%, transparent);
+            margin-bottom: 1em;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+    </header>
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
+</html>
